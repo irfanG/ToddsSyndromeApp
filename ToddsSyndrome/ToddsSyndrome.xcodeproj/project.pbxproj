@@ -13,6 +13,7 @@
 		548225481D11552500390A9D /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548225471D11552500390A9D /* Helper.swift */; };
 		5482254A1D116B4300390A9D /* PatientsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548225491D116B4300390A9D /* PatientsModel.swift */; };
 		5482254C1D116BA700390A9D /* TestsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482254B1D116BA700390A9D /* TestsModel.swift */; };
+		5482254E1D116D8600390A9D /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482254D1D116D8600390A9D /* NetworkController.swift */; };
 		54CAF0C01D1049AE00833FED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAF0BF1D1049AE00833FED /* AppDelegate.swift */; };
 		54CAF0C21D1049AE00833FED /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAF0C11D1049AE00833FED /* StartVC.swift */; };
 		54CAF0C51D1049AE00833FED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54CAF0C31D1049AE00833FED /* Main.storyboard */; };
@@ -56,6 +57,7 @@
 		548225471D11552500390A9D /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		548225491D116B4300390A9D /* PatientsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientsModel.swift; sourceTree = "<group>"; };
 		5482254B1D116BA700390A9D /* TestsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestsModel.swift; sourceTree = "<group>"; };
+		5482254D1D116D8600390A9D /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		54CAF0BC1D1049AE00833FED /* ToddsSyndrome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToddsSyndrome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54CAF0BF1D1049AE00833FED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54CAF0C11D1049AE00833FED /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 		5482253B1D10B49400390A9D /* Support files */ = {
 			isa = PBXGroup;
 			children = (
+				5482254D1D116D8600390A9D /* NetworkController.swift */,
 				548225471D11552500390A9D /* Helper.swift */,
 				54CAF0FA1D10A1DC00833FED /* Extensions.swift */,
 				54CAF0F81D109F0F00833FED /* Constants.swift */,
@@ -446,6 +449,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5482253D1D10B7FF00390A9D /* NewRecordVC.swift in Sources */,
+				5482254E1D116D8600390A9D /* NetworkController.swift in Sources */,
 				54CAF0E91D105E1400833FED /* Tests.swift in Sources */,
 				54CAF0F91D109F0F00833FED /* Constants.swift in Sources */,
 				54CAF0EB1D10944100833FED /* HomeVC.swift in Sources */,
