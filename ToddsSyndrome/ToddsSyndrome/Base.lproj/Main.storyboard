@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="us6-8Q-gwo">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--StartVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="StartVC" customModule="ToddsSyndrome" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +18,140 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to ToddsSyndromeApp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwS-LQ-1IK" customClass="TSLabel" customModule="ToddsSyndrome" customModuleProvider="target">
+                                <rect key="frame" x="20" y="74" width="560" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="1WD-VR-In4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22a-VB-Ln3" customClass="TSLabel" customModule="ToddsSyndrome" customModuleProvider="target">
+                                <rect key="frame" x="569" y="501" width="11" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36" id="pog-uy-39s"/>
+                                    <constraint firstAttribute="height" constant="36" id="ypB-EL-4rd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="pog-uy-39s"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BwS-LQ-1IK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="2LD-9y-SXQ"/>
+                            <constraint firstItem="BwS-LQ-1IK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ETJ-nh-p4d"/>
+                            <constraint firstItem="22a-VB-Ln3" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Kse-7I-T43"/>
+                            <constraint firstItem="22a-VB-Ln3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.73" id="c82-hO-hTX"/>
+                            <constraint firstItem="BwS-LQ-1IK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="nkA-iJ-EgT"/>
+                            <constraint firstItem="BwS-LQ-1IK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="nzd-sk-hV2"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="8w8-E3-ZQ8"/>
+                    <connections>
+                        <outlet property="swipeRightLabel" destination="22a-VB-Ln3" id="CPf-n8-HcK"/>
+                        <outlet property="welcomeTextLabel" destination="BwS-LQ-1IK" id="Efu-vo-qKn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1117" y="349"/>
+        </scene>
+        <!--HomeVC-->
+        <scene sceneID="dmW-9B-OYW">
+            <objects>
+                <tableViewController storyboardIdentifier="HomeVC" id="g6p-Ps-eLc" customClass="HomeVC" customModule="ToddsSyndrome" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="1jR-cX-rY5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="g6p-Ps-eLc" id="WdW-UI-9UR"/>
+                            <outlet property="delegate" destination="g6p-Ps-eLc" id="Q6g-JP-cdZ"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="s1a-Tm-YRe">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="kIB-kW-wiQ">
+                            <connections>
+                                <action selector="createNewRecord:" destination="g6p-Ps-eLc" id="nEH-cM-VSC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l2n-Lk-NAt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1806" y="349"/>
+        </scene>
+        <!--New RecordVC-->
+        <scene sceneID="app-OP-Kmz">
+            <objects>
+                <tableViewController storyboardIdentifier="NewRecordVC" id="m1D-Xk-Mbd" customClass="NewRecordVC" customModule="ToddsSyndrome" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ubW-LU-gTK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="m1D-Xk-Mbd" id="8OG-eW-DoD"/>
+                            <outlet property="delegate" destination="m1D-Xk-Mbd" id="ptf-o5-ult"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="datePicker" destination="yDw-YU-683" id="MwC-ed-70i"/>
+                        <outlet property="toolbar" destination="vwS-zt-A8V" id="76A-0A-Kln"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R8L-x4-uFC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="vwS-zt-A8V">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="wOu-c7-U7W"/>
+                        <barButtonItem systemItem="done" id="HxF-LZ-tJZ">
+                            <connections>
+                                <action selector="doneHandler:" destination="m1D-Xk-Mbd" id="Osc-sZ-7ai"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" id="yDw-YU-683">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <date key="date" timeIntervalSinceReferenceDate="487643784.18898499">
+                        <!--2016-06-15 00:36:24 +0000-->
+                    </date>
+                    <connections>
+                        <action selector="pickerChange:" destination="m1D-Xk-Mbd" eventType="valueChanged" id="c41-Tc-tun"/>
+                    </connections>
+                </datePicker>
+            </objects>
+            <point key="canvasLocation" x="2467" y="314"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="B0W-ee-gz9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="us6-8Q-gwo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ddy-JF-Nt6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Zde-mo-By5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gvc-vQ-s9q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="349"/>
         </scene>
     </scenes>
 </document>

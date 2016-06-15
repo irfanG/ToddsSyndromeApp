@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="RecordScoreCell" rowHeight="60" id="iEB-5c-emu" customClass="RecordScoreCell" customModule="ToddsSyndrome" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iEB-5c-emu" id="JvF-qO-i0h">
+                <rect key="frame" x="0.0" y="0.0" width="346" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GtS-cq-3mt" customClass="TSLabel" customModule="ToddsSyndrome" customModuleProvider="target">
+                        <rect key="frame" x="20" y="0.0" width="196" height="60"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPJ-kd-ukC">
+                        <rect key="frame" x="224" y="0.0" width="118" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="118" id="gZi-WY-abS"/>
+                        </constraints>
+                        <state key="normal" title="Calculate"/>
+                    </button>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EyZ-ao-hqQ">
+                        <rect key="frame" x="224" y="10" width="118" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="905-UJ-LpB"/>
+                            <constraint firstAttribute="width" constant="118" id="Jyb-Sw-Kut"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="905-UJ-LpB"/>
+                            </mask>
+                        </variation>
+                    </textField>
+                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dLL-Fc-da6">
+                        <rect key="frame" x="224" y="10" width="118" height="41"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="118" id="5CW-Kj-nr6"/>
+                        </constraints>
+                        <segments>
+                            <segment title="First"/>
+                            <segment title="Yes"/>
+                        </segments>
+                    </segmentedControl>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="KPJ-kd-ukC" secondAttribute="trailing" constant="4" id="2BC-BY-c9p"/>
+                    <constraint firstItem="dLL-Fc-da6" firstAttribute="top" secondItem="JvF-qO-i0h" secondAttribute="top" constant="10" id="2X6-pr-sP1"/>
+                    <constraint firstAttribute="bottom" secondItem="GtS-cq-3mt" secondAttribute="bottom" constant="-0.5" id="2rs-wD-Vco"/>
+                    <constraint firstItem="EyZ-ao-hqQ" firstAttribute="top" secondItem="JvF-qO-i0h" secondAttribute="top" constant="10" id="C0T-vq-IW2"/>
+                    <constraint firstAttribute="bottom" secondItem="KPJ-kd-ukC" secondAttribute="bottom" constant="-0.5" id="DXw-vZ-0eu"/>
+                    <constraint firstItem="GtS-cq-3mt" firstAttribute="top" secondItem="JvF-qO-i0h" secondAttribute="top" id="EL2-6H-mhG"/>
+                    <constraint firstAttribute="trailing" secondItem="dLL-Fc-da6" secondAttribute="trailing" constant="4" id="Fxk-Ng-pAe"/>
+                    <constraint firstItem="dLL-Fc-da6" firstAttribute="leading" secondItem="GtS-cq-3mt" secondAttribute="trailing" constant="8" id="JWF-at-99j"/>
+                    <constraint firstAttribute="trailing" secondItem="EyZ-ao-hqQ" secondAttribute="trailing" constant="4" id="V3g-og-0D7"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="dLL-Fc-da6" secondAttribute="bottom" constant="1.5" id="a9e-iA-eQ4"/>
+                    <constraint firstAttribute="trailing" secondItem="dLL-Fc-da6" secondAttribute="trailing" constant="4" id="glG-gC-qY7"/>
+                    <constraint firstAttribute="bottom" secondItem="EyZ-ao-hqQ" secondAttribute="bottom" constant="9.5" id="igB-Qt-00K"/>
+                    <constraint firstAttribute="bottom" secondItem="dLL-Fc-da6" secondAttribute="bottom" constant="16" id="q6f-Xk-lgu"/>
+                    <constraint firstItem="GtS-cq-3mt" firstAttribute="leading" secondItem="JvF-qO-i0h" secondAttribute="leading" constant="20" id="qjm-bj-Hdz"/>
+                    <constraint firstItem="KPJ-kd-ukC" firstAttribute="top" secondItem="JvF-qO-i0h" secondAttribute="top" id="sIA-1u-oM5"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Fxk-Ng-pAe"/>
+                        <exclude reference="q6f-Xk-lgu"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="calculateScoreButton" destination="KPJ-kd-ukC" id="sdg-Ew-efo"/>
+                <outlet property="testDescription" destination="GtS-cq-3mt" id="boH-99-o1O"/>
+                <outlet property="testMeasureSegmentedControl" destination="dLL-Fc-da6" id="D3c-Gg-cAF"/>
+                <outlet property="testMeasureTextField" destination="EyZ-ao-hqQ" id="E8g-x4-hUj"/>
+            </connections>
+            <point key="canvasLocation" x="291" y="244"/>
+        </tableViewCell>
+    </objects>
+</document>

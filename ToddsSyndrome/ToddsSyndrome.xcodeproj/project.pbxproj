@@ -7,13 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5482253D1D10B7FF00390A9D /* NewRecordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482253C1D10B7FF00390A9D /* NewRecordVC.swift */; };
+		548225441D114BD000390A9D /* ProgressBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548225421D114BD000390A9D /* ProgressBarCell.swift */; };
+		548225451D114BD000390A9D /* ProgressBarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 548225431D114BD000390A9D /* ProgressBarCell.xib */; };
+		548225481D11552500390A9D /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548225471D11552500390A9D /* Helper.swift */; };
+		5482254A1D116B4300390A9D /* PatientsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548225491D116B4300390A9D /* PatientsModel.swift */; };
+		5482254C1D116BA700390A9D /* TestsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482254B1D116BA700390A9D /* TestsModel.swift */; };
 		54CAF0C01D1049AE00833FED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAF0BF1D1049AE00833FED /* AppDelegate.swift */; };
-		54CAF0C21D1049AE00833FED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAF0C11D1049AE00833FED /* ViewController.swift */; };
+		54CAF0C21D1049AE00833FED /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAF0C11D1049AE00833FED /* StartVC.swift */; };
 		54CAF0C51D1049AE00833FED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54CAF0C31D1049AE00833FED /* Main.storyboard */; };
 		54CAF0C81D1049AE00833FED /* ToddsSyndrome.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54CAF0C61D1049AE00833FED /* ToddsSyndrome.xcdatamodeld */; };
 		54CAF0CA1D1049AE00833FED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54CAF0C91D1049AE00833FED /* Assets.xcassets */; };
 		54CAF0CD1D1049AE00833FED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54CAF0CB1D1049AE00833FED /* LaunchScreen.storyboard */; };
 		54CAF0D81D1049AE00833FED /* ToddsSyndromeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAF0D71D1049AE00833FED /* ToddsSyndromeTests.swift */; };
+		54CAF0E61D105E1400833FED /* Patients+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAF0E21D105E1400833FED /* Patients+CoreDataProperties.swift */; };
+		54CAF0E71D105E1400833FED /* Patients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAF0E31D105E1400833FED /* Patients.swift */; };
+		54CAF0E81D105E1400833FED /* Tests+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAF0E41D105E1400833FED /* Tests+CoreDataProperties.swift */; };
+		54CAF0E91D105E1400833FED /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAF0E51D105E1400833FED /* Tests.swift */; };
+		54CAF0EB1D10944100833FED /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAF0EA1D10944100833FED /* HomeVC.swift */; };
+		54CAF0ED1D10965400833FED /* PatientScoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54CAF0EC1D10965400833FED /* PatientScoreCell.xib */; };
+		54CAF0EF1D10996E00833FED /* PatientScoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAF0EE1D10996E00833FED /* PatientScoreCell.swift */; };
+		54CAF0F31D109AF600833FED /* RecordScoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54CAF0F21D109AF600833FED /* RecordScoreCell.xib */; };
+		54CAF0F51D109D3500833FED /* RecordScoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAF0F41D109D3500833FED /* RecordScoreCell.swift */; };
+		54CAF0F91D109F0F00833FED /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAF0F81D109F0F00833FED /* Constants.swift */; };
+		54CAF0FB1D10A1DC00833FED /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAF0FA1D10A1DC00833FED /* Extensions.swift */; };
+		54CAF0FD1D10A31800833FED /* TSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CAF0FC1D10A31800833FED /* TSLabel.swift */; };
+		9B3537AF61A05C8FE7886DE7 /* Pods_ToddsSyndromeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E61ADD9FB48C3FC96C81A4 /* Pods_ToddsSyndromeTests.framework */; };
+		9F67AABD7D0AF71BAF1B1BC1 /* Pods_ToddsSyndrome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21E23C6DBCE6D2AF50AF2E7B /* Pods_ToddsSyndrome.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,9 +47,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07B16D5C3D9E61331B65F415 /* Pods-ToddsSyndrome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToddsSyndrome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToddsSyndrome/Pods-ToddsSyndrome.debug.xcconfig"; sourceTree = "<group>"; };
+		21E23C6DBCE6D2AF50AF2E7B /* Pods_ToddsSyndrome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToddsSyndrome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51E61ADD9FB48C3FC96C81A4 /* Pods_ToddsSyndromeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToddsSyndromeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5482253C1D10B7FF00390A9D /* NewRecordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewRecordVC.swift; sourceTree = "<group>"; };
+		548225421D114BD000390A9D /* ProgressBarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressBarCell.swift; path = ../ProgressBarCell.swift; sourceTree = "<group>"; };
+		548225431D114BD000390A9D /* ProgressBarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProgressBarCell.xib; path = ../ProgressBarCell.xib; sourceTree = "<group>"; };
+		548225471D11552500390A9D /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		548225491D116B4300390A9D /* PatientsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientsModel.swift; sourceTree = "<group>"; };
+		5482254B1D116BA700390A9D /* TestsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestsModel.swift; sourceTree = "<group>"; };
 		54CAF0BC1D1049AE00833FED /* ToddsSyndrome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToddsSyndrome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54CAF0BF1D1049AE00833FED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		54CAF0C11D1049AE00833FED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		54CAF0C11D1049AE00833FED /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
 		54CAF0C41D1049AE00833FED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		54CAF0C71D1049AE00833FED /* ToddsSyndrome.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToddsSyndrome.xcdatamodel; sourceTree = "<group>"; };
 		54CAF0C91D1049AE00833FED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +67,21 @@
 		54CAF0D31D1049AE00833FED /* ToddsSyndromeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToddsSyndromeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54CAF0D71D1049AE00833FED /* ToddsSyndromeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToddsSyndromeTests.swift; sourceTree = "<group>"; };
 		54CAF0D91D1049AE00833FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54CAF0E21D105E1400833FED /* Patients+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Patients+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		54CAF0E31D105E1400833FED /* Patients.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patients.swift; sourceTree = "<group>"; };
+		54CAF0E41D105E1400833FED /* Tests+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tests+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		54CAF0E51D105E1400833FED /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		54CAF0EA1D10944100833FED /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		54CAF0EC1D10965400833FED /* PatientScoreCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PatientScoreCell.xib; sourceTree = "<group>"; };
+		54CAF0EE1D10996E00833FED /* PatientScoreCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientScoreCell.swift; sourceTree = "<group>"; };
+		54CAF0F21D109AF600833FED /* RecordScoreCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecordScoreCell.xib; sourceTree = "<group>"; };
+		54CAF0F41D109D3500833FED /* RecordScoreCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordScoreCell.swift; sourceTree = "<group>"; };
+		54CAF0F81D109F0F00833FED /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		54CAF0FA1D10A1DC00833FED /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		54CAF0FC1D10A31800833FED /* TSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSLabel.swift; sourceTree = "<group>"; };
+		99E101048CB9B51B3DC50E7A /* Pods-ToddsSyndromeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToddsSyndromeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToddsSyndromeTests/Pods-ToddsSyndromeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9DC34DDE36BC7615CFE2A38F /* Pods-ToddsSyndrome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToddsSyndrome.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToddsSyndrome/Pods-ToddsSyndrome.release.xcconfig"; sourceTree = "<group>"; };
+		F96AF85D6CA195B4856B6FD6 /* Pods-ToddsSyndromeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToddsSyndromeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToddsSyndromeTests/Pods-ToddsSyndromeTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F67AABD7D0AF71BAF1B1BC1 /* Pods_ToddsSyndrome.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +97,68 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B3537AF61A05C8FE7886DE7 /* Pods_ToddsSyndromeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09B3CDC2111CB019253B7652 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21E23C6DBCE6D2AF50AF2E7B /* Pods_ToddsSyndrome.framework */,
+				51E61ADD9FB48C3FC96C81A4 /* Pods_ToddsSyndromeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		280C19F33F255D74644BD96F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07B16D5C3D9E61331B65F415 /* Pods-ToddsSyndrome.debug.xcconfig */,
+				9DC34DDE36BC7615CFE2A38F /* Pods-ToddsSyndrome.release.xcconfig */,
+				99E101048CB9B51B3DC50E7A /* Pods-ToddsSyndromeTests.debug.xcconfig */,
+				F96AF85D6CA195B4856B6FD6 /* Pods-ToddsSyndromeTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5482253A1D10B47500390A9D /* Custom views */ = {
+			isa = PBXGroup;
+			children = (
+				54CAF0FC1D10A31800833FED /* TSLabel.swift */,
+			);
+			name = "Custom views";
+			sourceTree = "<group>";
+		};
+		5482253B1D10B49400390A9D /* Support files */ = {
+			isa = PBXGroup;
+			children = (
+				548225471D11552500390A9D /* Helper.swift */,
+				54CAF0FA1D10A1DC00833FED /* Extensions.swift */,
+				54CAF0F81D109F0F00833FED /* Constants.swift */,
+			);
+			name = "Support files";
+			sourceTree = "<group>";
+		};
+		548225461D114BDC00390A9D /* Progress Bar Cell */ = {
+			isa = PBXGroup;
+			children = (
+				548225431D114BD000390A9D /* ProgressBarCell.xib */,
+				548225421D114BD000390A9D /* ProgressBarCell.swift */,
+			);
+			name = "Progress Bar Cell";
+			sourceTree = "<group>";
+		};
 		54CAF0B31D1049AE00833FED = {
 			isa = PBXGroup;
 			children = (
 				54CAF0BE1D1049AE00833FED /* ToddsSyndrome */,
 				54CAF0D61D1049AE00833FED /* ToddsSyndromeTests */,
 				54CAF0BD1D1049AE00833FED /* Products */,
+				280C19F33F255D74644BD96F /* Pods */,
+				09B3CDC2111CB019253B7652 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,8 +175,14 @@
 			isa = PBXGroup;
 			children = (
 				54CAF0BF1D1049AE00833FED /* AppDelegate.swift */,
-				54CAF0C11D1049AE00833FED /* ViewController.swift */,
+				54CAF0C11D1049AE00833FED /* StartVC.swift */,
+				54CAF0EA1D10944100833FED /* HomeVC.swift */,
+				5482253C1D10B7FF00390A9D /* NewRecordVC.swift */,
+				5482253B1D10B49400390A9D /* Support files */,
 				54CAF0C31D1049AE00833FED /* Main.storyboard */,
+				5482253A1D10B47500390A9D /* Custom views */,
+				54CAF0F11D1099F000833FED /* Models */,
+				54CAF0F01D1099DA00833FED /* Custom cells */,
 				54CAF0C91D1049AE00833FED /* Assets.xcassets */,
 				54CAF0CB1D1049AE00833FED /* LaunchScreen.storyboard */,
 				54CAF0CE1D1049AE00833FED /* Info.plist */,
@@ -99,6 +200,48 @@
 			path = ToddsSyndromeTests;
 			sourceTree = "<group>";
 		};
+		54CAF0F01D1099DA00833FED /* Custom cells */ = {
+			isa = PBXGroup;
+			children = (
+				548225461D114BDC00390A9D /* Progress Bar Cell */,
+				54CAF0F61D109D4300833FED /* Patient List Cell */,
+				54CAF0F71D109D5300833FED /* Record Score Cell */,
+			);
+			name = "Custom cells";
+			sourceTree = "<group>";
+		};
+		54CAF0F11D1099F000833FED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				54CAF0E21D105E1400833FED /* Patients+CoreDataProperties.swift */,
+				54CAF0E31D105E1400833FED /* Patients.swift */,
+				548225491D116B4300390A9D /* PatientsModel.swift */,
+				5482254B1D116BA700390A9D /* TestsModel.swift */,
+				54CAF0E41D105E1400833FED /* Tests+CoreDataProperties.swift */,
+				54CAF0E51D105E1400833FED /* Tests.swift */,
+			);
+			name = Models;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		54CAF0F61D109D4300833FED /* Patient List Cell */ = {
+			isa = PBXGroup;
+			children = (
+				54CAF0EC1D10965400833FED /* PatientScoreCell.xib */,
+				54CAF0EE1D10996E00833FED /* PatientScoreCell.swift */,
+			);
+			name = "Patient List Cell";
+			sourceTree = "<group>";
+		};
+		54CAF0F71D109D5300833FED /* Record Score Cell */ = {
+			isa = PBXGroup;
+			children = (
+				54CAF0F21D109AF600833FED /* RecordScoreCell.xib */,
+				54CAF0F41D109D3500833FED /* RecordScoreCell.swift */,
+			);
+			name = "Record Score Cell";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +249,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54CAF0DC1D1049AE00833FED /* Build configuration list for PBXNativeTarget "ToddsSyndrome" */;
 			buildPhases = (
+				287388297B0144DDB59AA90E /* [CP] Check Pods Manifest.lock */,
 				54CAF0B81D1049AE00833FED /* Sources */,
 				54CAF0B91D1049AE00833FED /* Frameworks */,
 				54CAF0BA1D1049AE00833FED /* Resources */,
+				BD2BB376F0D7606EE996F66D /* [CP] Embed Pods Frameworks */,
+				24EC43BA6ABC0CE78E4FD9D4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,9 +269,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54CAF0DF1D1049AE00833FED /* Build configuration list for PBXNativeTarget "ToddsSyndromeTests" */;
 			buildPhases = (
+				F436583CBF7ADF404ECC90E7 /* [CP] Check Pods Manifest.lock */,
 				54CAF0CF1D1049AE00833FED /* Sources */,
 				54CAF0D01D1049AE00833FED /* Frameworks */,
 				54CAF0D11D1049AE00833FED /* Resources */,
+				70932FC04119D47988C2A167 /* [CP] Embed Pods Frameworks */,
+				D2775D4EEFD8036D865644BF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,8 +329,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				548225451D114BD000390A9D /* ProgressBarCell.xib in Resources */,
+				54CAF0F31D109AF600833FED /* RecordScoreCell.xib in Resources */,
 				54CAF0CD1D1049AE00833FED /* LaunchScreen.storyboard in Resources */,
 				54CAF0CA1D1049AE00833FED /* Assets.xcassets in Resources */,
+				54CAF0ED1D10965400833FED /* PatientScoreCell.xib in Resources */,
 				54CAF0C51D1049AE00833FED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,13 +347,121 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		24EC43BA6ABC0CE78E4FD9D4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToddsSyndrome/Pods-ToddsSyndrome-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		287388297B0144DDB59AA90E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		70932FC04119D47988C2A167 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToddsSyndromeTests/Pods-ToddsSyndromeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD2BB376F0D7606EE996F66D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToddsSyndrome/Pods-ToddsSyndrome-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2775D4EEFD8036D865644BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToddsSyndromeTests/Pods-ToddsSyndromeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F436583CBF7ADF404ECC90E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		54CAF0B81D1049AE00833FED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54CAF0C21D1049AE00833FED /* ViewController.swift in Sources */,
+				5482253D1D10B7FF00390A9D /* NewRecordVC.swift in Sources */,
+				54CAF0E91D105E1400833FED /* Tests.swift in Sources */,
+				54CAF0F91D109F0F00833FED /* Constants.swift in Sources */,
+				54CAF0EB1D10944100833FED /* HomeVC.swift in Sources */,
+				54CAF0E71D105E1400833FED /* Patients.swift in Sources */,
+				54CAF0FD1D10A31800833FED /* TSLabel.swift in Sources */,
+				54CAF0C21D1049AE00833FED /* StartVC.swift in Sources */,
+				548225481D11552500390A9D /* Helper.swift in Sources */,
+				54CAF0E61D105E1400833FED /* Patients+CoreDataProperties.swift in Sources */,
+				5482254C1D116BA700390A9D /* TestsModel.swift in Sources */,
+				54CAF0E81D105E1400833FED /* Tests+CoreDataProperties.swift in Sources */,
+				5482254A1D116B4300390A9D /* PatientsModel.swift in Sources */,
+				54CAF0FB1D10A1DC00833FED /* Extensions.swift in Sources */,
+				548225441D114BD000390A9D /* ProgressBarCell.swift in Sources */,
 				54CAF0C01D1049AE00833FED /* AppDelegate.swift in Sources */,
+				54CAF0F51D109D3500833FED /* RecordScoreCell.swift in Sources */,
+				54CAF0EF1D10996E00833FED /* PatientScoreCell.swift in Sources */,
 				54CAF0C81D1049AE00833FED /* ToddsSyndrome.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,6 +591,7 @@
 		};
 		54CAF0DD1D1049AE00833FED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07B16D5C3D9E61331B65F415 /* Pods-ToddsSyndrome.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ToddsSyndrome/Info.plist;
@@ -342,6 +603,7 @@
 		};
 		54CAF0DE1D1049AE00833FED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DC34DDE36BC7615CFE2A38F /* Pods-ToddsSyndrome.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ToddsSyndrome/Info.plist;
@@ -353,6 +615,7 @@
 		};
 		54CAF0E01D1049AE00833FED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99E101048CB9B51B3DC50E7A /* Pods-ToddsSyndromeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ToddsSyndromeTests/Info.plist;
@@ -365,6 +628,7 @@
 		};
 		54CAF0E11D1049AE00833FED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F96AF85D6CA195B4856B6FD6 /* Pods-ToddsSyndromeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ToddsSyndromeTests/Info.plist;
@@ -394,6 +658,7 @@
 				54CAF0DE1D1049AE00833FED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54CAF0DF1D1049AE00833FED /* Build configuration list for PBXNativeTarget "ToddsSyndromeTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +667,7 @@
 				54CAF0E11D1049AE00833FED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

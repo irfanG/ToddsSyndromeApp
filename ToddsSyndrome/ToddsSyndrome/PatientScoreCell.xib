@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PatientScoreCell" rowHeight="70" id="sWM-BS-VWY" customClass="PatientListCell" customModule="ToddsSyndrome" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="319" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sWM-BS-VWY" id="ZII-7Z-Kk5">
+                <rect key="frame" x="0.0" y="0.0" width="319" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mem-Wh-Dno" customClass="TSLabel" customModule="ToddsSyndrome" customModuleProvider="target">
+                        <rect key="frame" x="5" y="0.0" width="249" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="OOG-GY-ABa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwx-Sv-3cy" customClass="TSLabel" customModule="ToddsSyndrome" customModuleProvider="target">
+                        <rect key="frame" x="5" y="40" width="249" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0J-ON-EMr" customClass="TSLabel" customModule="ToddsSyndrome" customModuleProvider="target">
+                        <rect key="frame" x="257" y="19" width="54" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="54" id="LQJ-Pv-F35"/>
+                            <constraint firstAttribute="height" constant="29" id="dDg-hj-W2s"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hwx-Sv-3cy" firstAttribute="leading" secondItem="ZII-7Z-Kk5" secondAttribute="leading" constant="5" id="4Ia-ZD-Ton"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="c0J-ON-EMr" secondAttribute="bottom" constant="13.5" id="6iA-tQ-pVk"/>
+                    <constraint firstItem="c0J-ON-EMr" firstAttribute="top" secondItem="ZII-7Z-Kk5" secondAttribute="topMargin" constant="11" id="Bsm-T9-cxS"/>
+                    <constraint firstItem="c0J-ON-EMr" firstAttribute="trailing" secondItem="ZII-7Z-Kk5" secondAttribute="trailingMargin" id="Xxw-4H-gJ0"/>
+                    <constraint firstItem="Mem-Wh-Dno" firstAttribute="width" secondItem="hwx-Sv-3cy" secondAttribute="width" id="Yxj-yn-bj2"/>
+                    <constraint firstItem="hwx-Sv-3cy" firstAttribute="top" secondItem="Mem-Wh-Dno" secondAttribute="bottom" id="dxC-CM-rOk"/>
+                    <constraint firstAttribute="bottom" secondItem="hwx-Sv-3cy" secondAttribute="bottom" constant="0.5" id="etc-dN-loC"/>
+                    <constraint firstItem="Mem-Wh-Dno" firstAttribute="leading" secondItem="ZII-7Z-Kk5" secondAttribute="leading" constant="5" id="f0Z-VA-t0g"/>
+                    <constraint firstItem="c0J-ON-EMr" firstAttribute="leading" secondItem="Mem-Wh-Dno" secondAttribute="trailing" constant="3" id="lQy-HK-3fk"/>
+                    <constraint firstItem="Mem-Wh-Dno" firstAttribute="top" secondItem="ZII-7Z-Kk5" secondAttribute="top" id="zWs-oP-tnz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="patientName" destination="Mem-Wh-Dno" id="ezY-OH-ilb"/>
+                <outlet property="scoreLabel" destination="c0J-ON-EMr" id="tdt-Yj-ro9"/>
+                <outlet property="testTimeStamp" destination="hwx-Sv-3cy" id="WQW-9T-XoR"/>
+            </connections>
+            <point key="canvasLocation" x="255.5" y="160"/>
+        </tableViewCell>
+    </objects>
+</document>

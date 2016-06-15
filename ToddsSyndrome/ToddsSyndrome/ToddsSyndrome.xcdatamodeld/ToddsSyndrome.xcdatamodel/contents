@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15F34" minimumToolsVersion="Automatic">
+    <entity name="Patients" representedClassName=".Patients" syncable="YES">
+        <attribute name="patientName" attributeType="String" minValueString="2" syncable="YES"/>
+        <relationship name="tests" toMany="YES" deletionRule="Cascade" destinationEntity="Tests" inverseName="patients" inverseEntity="Tests" syncable="YES"/>
+    </entity>
+    <entity name="Tests" representedClassName=".Tests" syncable="YES">
+        <attribute name="dateOfBirth" attributeType="Date" syncable="YES"/>
+        <attribute name="gender" attributeType="String" minValueString="1" maxValueString="1" syncable="YES"/>
+        <attribute name="hasMigrene" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="testDate" attributeType="Date" syncable="YES"/>
+        <attribute name="usesDrugs" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="patients" maxCount="1" deletionRule="Deny" destinationEntity="Patients" inverseName="tests" inverseEntity="Patients" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Patients" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="Tests" positionX="-54" positionY="9" width="128" height="135"/>
+    </elements>
 </model>
